@@ -10,9 +10,12 @@ export interface IHelloProps {
 export class Hello extends React.Component<IHelloProps, {}> {
   public render(): JSX.Element {
     return (
-      <h1>
-        Hello from {this.props.compiler} and {this.props.framework}!
-      </h1>
+      <div>
+        <h2>Env: {process.env.ENV}</h2>
+        <h1>
+          Hello from {this.props.compiler} and {this.props.framework}!
+        </h1>
+      </div>
     );
   }
 }
