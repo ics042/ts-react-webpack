@@ -1,5 +1,5 @@
 {
-  "name": "todo",
+  "name": "ts-react-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "dotenv-webpack": "^1.5.7",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
@@ -34,7 +35,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint-fix": "tslint --fix -p tsconfig.json"
   },
   "author": "",
   "license": "ISC"
