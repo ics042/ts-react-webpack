@@ -1,6 +1,6 @@
+import * as TestImg from "app/assets/img/test.png";
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import * as TestImg from "app/assets/img/test.png";
 
 export interface IHomeProps {
   compiler: string;
