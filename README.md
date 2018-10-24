@@ -20,7 +20,9 @@ npm install -g webpack
 
 **Clone the project:**
 
-`git clone https://github.com/its404/ts-react-webpack.git`
+> Note: replace __folder_name__ to your real project name.
+
+`git clone https://github.com/its404/ts-react-webpack.git folder_name`
 
 **Install dependencies:**
 
