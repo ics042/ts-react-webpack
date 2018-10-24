@@ -1,10 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import "App/assets/scss/main.scss";
-import { Hello } from "App/components/Hello";
+import "app/assets/scss/main.scss";
+import { App } from "app/views/App";
 
-ReactDOM.render(
-  <Hello compiler="TypeScript 3" framework="React 16" />,
-  document.getElementById("app"),
-);
+ReactDOM.render(<App />, document.getElementById("app"));

@@ -8,12 +8,12 @@ module.exports = {
   entry: "./src/index.tsx",
   output: {
     filename: "bundle.js",
-    path: __dirname + "/build",
+    path: __dirname + "/build"
   },
   devServer: {
     contentBase: path.join(__dirname, "build"),
     compress: true,
-    port: 8000,
+    port: 8000
   },
   // Enable sourcemaps for debugging webpack's output.
   devtool: "source-map",
@@ -22,8 +22,8 @@ module.exports = {
     // Add '.ts' and '.tsx' as resolvable extensions.
     extensions: [".ts", ".tsx", ".js", ".json"],
     alias: {
-      App: path.resolve(__dirname, "src/"),
-    },
+      app: path.resolve(__dirname, "src/")
+    }
   },
 
   module: {
@@ -42,23 +42,31 @@ module.exports = {
             ? "style-loader"
             : MiniCssExtractPlugin.loader,
           "css-loader",
-          "sass-loader",
-        ],
+          "sass-loader"
+        ]
       },
-    ],
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        use: ["file-loader"]
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      filename: "index.html",
+      filename: "index.html"
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
-      chunkFilename: "[id].css",
+      chunkFilename: "[id].css"
     }),
     new TSLintPlugin({
-      files: ["./src/**/*.tsx"],
+      files: ["./src/**/*.tsx"]
     }),
-    new Dotenv(),
-  ],
+    new Dotenv()
+  ]
 };
