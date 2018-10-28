@@ -1,4 +1,4 @@
-import reducers from "app/redux/Reducers";
+import reducers from "app/redux/reducers/Reducers";
 import { connectRouter, routerMiddleware } from "connected-react-router";
 import createBrowserHistory from "history/createBrowserHistory";
 import { applyMiddleware, compose, createStore } from "redux";
@@ -20,7 +20,6 @@ const store = createStore(
   compose(applyMiddleware(...middlewares)),
 );
 
-// TODO change to real types
 const action = (type: any, payload: any) => store.dispatch({ type, payload });
 
 // Export history and store
