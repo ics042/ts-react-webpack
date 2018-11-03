@@ -45,7 +45,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
+    "build": "webpack --config webpack.prod.config.js --progress --profile --colors",
     "lint-fix": "tslint --fix -p tsconfig.json"
   },
   "author": "",
