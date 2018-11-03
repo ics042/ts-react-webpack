@@ -20,7 +20,7 @@ npm install -g webpack
 
 **Clone the project:**
 
-> Note: replace __folder_name__ to your real project name.
+> Note: replace **folder_name** to your real project name.
 
 `git clone https://github.com/its404/ts-react-webpack.git folder_name`
 
@@ -39,3 +39,5 @@ It will open http://localhost:8000 automactically.
 `npm start` - start the dev server
 
 `npm run lint-fix` - Try to fix linting errors automatically
+
+`npm run build` - Build project in production environment
