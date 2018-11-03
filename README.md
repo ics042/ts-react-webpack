@@ -41,3 +41,7 @@ It will open http://localhost:8000 automactically.
 `npm run lint-fix` - Try to fix linting errors automatically
 
 `npm run build` - Build project in production environment
+
+## Linting & Format
+
+`Prettier` is recommended for VSCode code format, enable `save to format` mode would make your life easier.
