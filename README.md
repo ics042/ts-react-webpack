@@ -45,3 +45,4 @@ It will open http://localhost:8000 automactically.
 ## Linting & Format
 
 `Prettier` is recommended for VSCode code format, enable `save to format` mode would make your life easier.
+You'll have to enable `Arrow Parens` to make the format meet TSLint requirement.

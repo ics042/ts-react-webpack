@@ -1,4 +1,4 @@
-import Todo from "app/models/Todo";
+import Todo from "app/models/ITodo";
 import { addTodo, toggleTodo } from "app/redux/actions/TodoAction";
 import {
   IAddTodoAction,
@@ -60,7 +60,7 @@ class HomePage extends React.Component<IProps, IState> {
     this.setState({
       value: event.currentTarget.value,
     });
-  }
+  };
 
   private addTodo = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -68,14 +68,14 @@ class HomePage extends React.Component<IProps, IState> {
     this.setState({
       value: "",
     });
-  }
+  };
 
   private toggleTodo = (todoId: number) => (
     event: React.MouseEvent<HTMLButtonElement>,
   ) => {
     event.preventDefault();
     this.props.toggleTodo(todoId);
-  }
+  };
 }
 
 const mapStateToProps = (state: IRootState): IStateProps => ({

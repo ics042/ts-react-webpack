@@ -1,4 +1,4 @@
-import Todo from "app/models/Todo";
+import Todo from "app/models/ITodo";
 import { Action, TodoActionTypes } from "app/redux/actions/TodoAction";
 
 export interface ITodoState {

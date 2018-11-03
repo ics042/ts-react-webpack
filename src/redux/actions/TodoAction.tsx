@@ -1,4 +1,4 @@
-import Todo from "app/models/Todo";
+import Todo from "app/models/ITodo";
 
 let nextId = 0;
 
